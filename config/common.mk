@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
+# Dual Boot
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/dualboot.sh:system/bin/dualboot.sh
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
