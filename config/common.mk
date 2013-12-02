@@ -163,6 +163,11 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMAccount
 
+# Screen recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
