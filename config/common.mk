@@ -152,8 +152,7 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     LockClock \
-    CMUpdater \
-    CMFota \
+    OpenDelta \
     CMAccount
 
 # Screen recorder
