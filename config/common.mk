@@ -153,8 +153,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     OpenDelta \
-    CMAccount \
-    WhisperPush
+    CMAccount
 
 # Screen recorder
 PRODUCT_PACKAGES += \
