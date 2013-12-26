@@ -17,6 +17,10 @@ set_secondary() {
   echo $ROMNAME > /system/.secondary
 }
 
+set_primary_kernel() {
+  dd if=/dev/block/platform/msm_sdcc.1/by-name/boot of=/system/dual-kernels/primary.img
+}
+
 set_secondary_kernel() {
   dd if=/dev/block/platform/msm_sdcc.1/by-name/boot of=/raw-system/dual-kernels/secondary.img
 }
@@ -41,6 +45,9 @@ case "$1" in
     ;;
   set-secondary)
     set_secondary
+    ;;
+  set-primary-kernel)
+    set_primary_kernel
     ;;
   set-secondary-kernel)
     set_secondary_kernel
