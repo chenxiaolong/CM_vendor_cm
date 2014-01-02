@@ -82,7 +82,12 @@ endif
 
 # Dual Boot
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/dualboot.sh:system/bin/dualboot.sh
+    vendor/cm/prebuilt/common/bin/dualboot.sh:system/bin/dualboot.sh \
+    vendor/cm/prebuilt/common/bin/backuppermtool.sh:system/bin/backuppermtool.sh \
+    vendor/cm/prebuilt/common/bin/getfattr:system/bin/getfattr \
+    vendor/cm/prebuilt/common/bin/setfattr:system/bin/setfattr \
+    vendor/cm/prebuilt/common/bin/getfacl:system/bin/getfacl \
+    vendor/cm/prebuilt/common/bin/setfacl:system/bin/setfacl
 
 # init.d support
 PRODUCT_COPY_FILES += \
