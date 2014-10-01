@@ -91,15 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
-# Dual Boot
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/dualboot.sh:system/bin/dualboot.sh \
-    vendor/cm/prebuilt/common/bin/backuppermtool.sh:system/bin/backuppermtool.sh \
-    vendor/cm/prebuilt/common/bin/getfattr:system/bin/getfattr \
-    vendor/cm/prebuilt/common/bin/setfattr:system/bin/setfattr \
-    vendor/cm/prebuilt/common/bin/getfacl:system/bin/getfacl \
-    vendor/cm/prebuilt/common/bin/setfacl:system/bin/setfacl
-
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
@@ -163,11 +154,6 @@ PRODUCT_PACKAGES += \
     OpenDelta \
     CMAccount \
     CMHome
-
-# Screen recorder
-PRODUCT_PACKAGES += \
-    ScreenRecorder \
-    libscreenrecorder
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
